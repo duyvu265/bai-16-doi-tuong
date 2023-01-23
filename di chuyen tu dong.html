@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>di chuyen tu dong</title>
+</head>
+<body>
+
+<img src="2111-15346574419822092708201.webp"
+     id="anh"
+     style="width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     position: relative;
+     top:0px;
+     left:0px;"
+     >
+<script>
+  let x = document.getElementById("anh");
+  setInterval(() =>{x.style.left=parseInt(x.style.left)+10 +'px';
+      if (parseInt(x.style.left)>=window.innerWidth){
+          x.style.left='-150px'}
+  },20
+  )
+
+
+
+
+
+
+</script>
+</body>
+</html>

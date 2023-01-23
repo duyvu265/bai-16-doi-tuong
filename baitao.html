@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img src="2111-15346574419822092708201.webp"
+     id="anh"
+     style="width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     position: relative;
+     top:0px;
+     left:0px;
+     transition: 0.5s;
+">
+<!--<button onclick="phai()"> sang phai</button>-->
+<!--<button onclick="trai()"> sang trai</button>-->
+<!--<button onclick="len()"> len</button>-->
+<!--<button onclick="xuong()"> xuong</button>-->
+<script>
+    let x = document.getElementById("anh");
+    // function phai(){
+    //   x.style.left=parseInt(x.style.left)+100+'px';
+    // }
+    // function trai(){
+    //   x.style.left=parseInt(x.style.left)-100+'px';
+    // }
+    // function xuong(){
+    //   x.style.top=parseInt(x.style.top)+100+'px';
+    // }
+    // function len(){
+    //   x.style.top=parseInt(x.style.top)-100+'px';
+    // }
+    window.addEventListener("keydown", (e) => {
+        if (e.keyCode == 37) {
+            x.style.left = parseInt(x.style.left) -80 + 'px';
+        }
+        if (e.keyCode == 38) {
+            x.style.top = parseInt(x.style.top) - 80 + 'px';
+
+        }
+        if (e.keyCode == 39) {
+            x.style.left = parseInt(x.style.left) + 80 + 'px';
+        }
+        if (e.keyCode == 40) {
+            x.style.top = parseInt(x.style.top) +80 + 'px';
+        }
+    });
+
+
+
+</script>
+</body>
+</html>
