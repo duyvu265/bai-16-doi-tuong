@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<canvas id="demo" width="500" height="600" ></canvas>
+<script>
+    let a=+prompt("nhap a");
+    let b=+prompt("nhap b");
+    function hcn() {
+        this.a=a;
+        this.b=b;
+        document.write("chiều dài là " + a +"<br> ");
+
+        document.write("chiều rộng là "+b+"<br> ");
+        document.write("diện tích hcn là "+ a*b+"<br> ");
+        document.write("chu vi hcn la "+(a+b)*2+"<br> ");
+        let canvar=document.getElementById("demo").getContext("2d");
+        canvar.fillRect(20,40,a,b);
+        canvar.fillStyle=Math.random();
+    }
+    hcn();
+</script>
+</body>
+</html>
