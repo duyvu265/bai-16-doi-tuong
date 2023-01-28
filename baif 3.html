@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<canvas id="demo" width="1368px" height="920px" style="border: black" ></canvas>
+<script>
+    function mau() {
+        let b=Math.floor(Math.random()*255);
+        let red=b;
+        let blue=b;
+        let green=b;
+        return "rgb("+red+","+blue+","+ green +")";
+
+
+    }
+    function ve(x,y,r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
+        let a = document.getElementById("demo").getContext("2d");
+         x=Math.floor(Math.random()* window.innerWidth);
+         y=Math.floor(Math.random()*window.innerHeight);
+         r = Math.random() * 80;
+        a.beginPath();
+        a.arc(x,y,r, 0, 2 * Math.PI);
+        a.fillStyle =mau();
+        a.fill();
+    }
+    function lap() {
+    for (let i=0;i<15;i++)
+        ve();
+}
+    lap();
+
+</script>
+
+
+</body>
+</html>
